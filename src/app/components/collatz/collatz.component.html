@@ -1,1 +1,13 @@
-<p>collatz works!</p>
+<div *ngIf="numero">
+    <h1 style="color:blue">Conjetura Collatz</h1>
+    <ul>
+        <li *ngFor="let num of numeros">
+            {{num}}
+        </li>
+    </ul>
+</div>
+<div *ngIf="!numero">
+    <h1 style="color:red">
+        Bienvenido App Collatz
+    </h1>
+</div>

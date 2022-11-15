@@ -1,1 +1,10 @@
-<p>menucollatz works!</p>
+<div>
+    <ul id="menu">
+        <li>
+            <a [routerLink]="['/']">Home</a>
+        </li>
+        <li *ngFor="let num of aleatorios">
+            <a [routerLink]="['/collatz', num]">{{num}}</a>
+        </li>
+    </ul>
+</div>
